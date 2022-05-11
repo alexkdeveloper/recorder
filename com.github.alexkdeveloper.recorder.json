@@ -1,0 +1,39 @@
+{
+  "app-id": "com.github.alexkdeveloper.recorder",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "42",
+  "sdk": "org.gnome.Sdk",
+  "command": "com.github.alexkdeveloper.recorder",
+  "finish-args": [
+     "--device=dri",
+     "--share=ipc",
+     "--socket=fallback-x11",
+     "--socket=wayland",
+     "--socket=pulseaudio"
+  ],
+  "cleanup": [
+     "/include",
+     "/lib/pkgconfig",
+     "/man",
+     "/share/doc",
+     "/share/gtk-doc",
+     "/share/man",
+     "/share/pkgconfig",
+     "/share/vala",
+     "*.la",
+     "*.a"
+  ],
+  "modules": [
+     {
+        "name": "Recorder",
+        "buildsystem": "meson",
+        "sources": [
+            {
+                "type" : "dir",
+                "path" : "."
+            }
+        ]
+      }
+  ]
+}
+
