@@ -118,6 +118,8 @@ Gst.Bus player_bus;
         scroll.set_vexpand(true);
         scroll.set_child (this.tree_view);
         current_action = new Label(_("Welcome!"));
+	current_action.wrap = true;
+        current_action.wrap_mode = WORD;
    vbox_list_page = new Box(Orientation.VERTICAL,10);
    vbox_list_page.append (current_action);
    vbox_list_page.append (scroll);
