@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Recorder
+Comment=Simple audio recorder
+Exec=com.github.alexkdeveloper.recorder %U
+Icon=com.github.alexkdeveloper.recorder
+Terminal=false
+Categories=Audio;Music;Player;AudioVideo;GNOME;GTK;
+Keywords=Recorder;Audio;Music;Player;
+X-Purism-FormFactor=Workstation;Mobile;

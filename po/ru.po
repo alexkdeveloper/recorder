@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-05-11 11:28+0800\n"
+"PO-Revision-Date: 2022-05-11 11:30+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: MainWindow.vala\n"
+
+#: MainWindow.vala:72
+msgid "Back"
+msgstr "Назад"
+
+#: MainWindow.vala:73
+msgid "Delete file"
+msgstr "Удалить файл"
+
+#: MainWindow.vala:74
+msgid "Rename file"
+msgstr "Переименовать файл"
+
+#: MainWindow.vala:75
+msgid "Play"
+msgstr "Запустить"
+
+#: MainWindow.vala:76
+msgid "Stop"
+msgstr "Остановить"
+
+#: MainWindow.vala:77
+msgid "Start recording"
+msgstr "Записать"
+
+#: MainWindow.vala:78
+msgid "Stop recording"
+msgstr "Остановить запись"
+
+#: MainWindow.vala:79
+msgid "Open the Records folder"
+msgstr "Открыть папку с записями"
+
+#: MainWindow.vala:120
+msgid "Welcome!"
+msgstr "Добро пожаловать!"
+
+#: MainWindow.vala:131
+msgid "_Name:"
+msgstr "_Имя файла:"
+
+#: MainWindow.vala:161
+msgid "Please choose a file"
+msgstr "Пожалуйста, выберите файл"
+
+#: MainWindow.vala:166
+msgid "Now playing: "
+msgstr "Сейчас играет: "
+
+#: MainWindow.vala:173
+msgid "Playback stopped"
+msgstr "Воспроизведение остановлено"
+
+#: MainWindow.vala:186
+msgid "Recording is in progress"
+msgstr "Идет запись"
+
+#: MainWindow.vala:188
+msgid ""
+"Error!\n"
+"Failed to start recording"
+msgstr ""
+"Ошибка!\n"
+"Не удалось начать запись"
+
+#: MainWindow.vala:198
+msgid "Recording stopped"
+msgstr "Запись остановлена"
+
+#: MainWindow.vala:228 MainWindow.vala:272
+msgid "Choose a file"
+msgstr "Выберите файл"
+
+#: MainWindow.vala:238
+msgid "Enter the name"
+msgstr "Введите имя файла"
+
+#: MainWindow.vala:247
+msgid "Rename failed"
+msgstr "Не удалось переименовать"
+
+#: MainWindow.vala:252
+msgid "A file with the same name already exists"
+msgstr "Файл с таким именем уже существует"
+
+#: MainWindow.vala:276
+msgid "Delete file "
+msgstr "Удалить файл"
+
+#: MainWindow.vala:277
+msgid "Question"
+msgstr "Вопрос"
+
+#: MainWindow.vala:283
+msgid "Delete failed"
+msgstr "Не удалось удалить"
+
+#: MainWindow.vala:338
+msgid "Message"
+msgstr "Сообщение"
+
