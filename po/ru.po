@@ -101,7 +101,7 @@ msgstr "Файл с таким именем уже существует"
 
 #: MainWindow.vala:276
 msgid "Delete file "
-msgstr "Удалить файл"
+msgstr "Удалить файл "
 
 #: MainWindow.vala:277
 msgid "Question"
