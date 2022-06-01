@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-06-01 18:46+0800\n"
+"PO-Revision-Date: 2022-06-01 18:46+0800\n"
+"Last-Translator: vikdevelop\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: MainWindow.vala\n"
+
+#: MainWindow.vala:72
+msgid "Back"
+msgstr "Zpět"
+
+#: MainWindow.vala:73
+msgid "Delete file"
+msgstr "Odstranit soubor"
+
+#: MainWindow.vala:74
+msgid "Rename file"
+msgstr "Přejmenovat soubor"
+
+#: MainWindow.vala:75
+msgid "Play"
+msgstr "Spustit"
+
+#: MainWindow.vala:76
+msgid "Stop"
+msgstr "Zastavit"
+
+#: MainWindow.vala:77
+msgid "Start recording"
+msgstr "Spustit nahrávání"
+
+#: MainWindow.vala:78
+msgid "Stop recording"
+msgstr "Zastavit nahrávání"
+
+#: MainWindow.vala:79
+msgid "Open the Records folder"
+msgstr "Otevřít složku se záznamy"
+
+#: MainWindow.vala:120
+msgid "Welcome!"
+msgstr "Vítejte!"
+
+#: MainWindow.vala:131
+msgid "_Name:"
+msgstr "_Název souboru:"
+
+#: MainWindow.vala:161
+msgid "Please choose a file"
+msgstr "Prosím vyberte soubor"
+
+#: MainWindow.vala:166
+msgid "Now playing: "
+msgstr "Nyní se přehrává: "
+
+#: MainWindow.vala:173
+msgid "Playback stopped"
+msgstr "Přehrávání bylo zastaveno"
+
+#: MainWindow.vala:186
+msgid "Recording is in progress"
+msgstr "Nahrávání probíhá"
+
+#: MainWindow.vala:188
+msgid ""
+"Error!\n"
+"Failed to start recording"
+msgstr ""
+"Chyba!\n"
+"Nepodačilo se spustit nahrávání"
+
+#: MainWindow.vala:198
+msgid "Recording stopped"
+msgstr "Nahrávání bylo zastaveno"
+
+#: MainWindow.vala:228 MainWindow.vala:272
+msgid "Choose a file"
+msgstr "Vyberte soubor"
+
+#: MainWindow.vala:238
+msgid "Enter the name"
+msgstr "Zadejte název"
+
+#: MainWindow.vala:247
+msgid "Rename failed"
+msgstr "Přejmenování se nezdařilo"
+
+#: MainWindow.vala:252
+msgid "A file with the same name already exists"
+msgstr "Файл с таким именем уже существует"
+
+#: MainWindow.vala:276
+msgid "Delete file "
+msgstr "Odstranit soubor "
+
+#: MainWindow.vala:277
+msgid "Question"
+msgstr "Otázka"
+
+#: MainWindow.vala:283
+msgid "Delete failed"
+msgstr "Odstranění se nezdačilo"
+
+#: MainWindow.vala:338
+msgid "Message"
+msgstr "Zpráva"
