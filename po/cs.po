@@ -77,7 +77,7 @@ msgid ""
 "Failed to start recording"
 msgstr ""
 "Chyba!\n"
-"Nepodačilo se spustit nahrávání"
+"Nepodařilo se spustit nahrávání"
 
 #: MainWindow.vala:198
 msgid "Recording stopped"
@@ -97,7 +97,7 @@ msgstr "Přejmenování se nezdařilo"
 
 #: MainWindow.vala:252
 msgid "A file with the same name already exists"
-msgstr "Файл с таким именем уже существует"
+msgstr "Soubor se stejným názvem již existuje"
 
 #: MainWindow.vala:276
 msgid "Delete file "
@@ -109,7 +109,7 @@ msgstr "Otázka"
 
 #: MainWindow.vala:283
 msgid "Delete failed"
-msgstr "Odstranění se nezdačilo"
+msgstr "Odstranění se nezdařilo"
 
 #: MainWindow.vala:338
 msgid "Message"
