@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-05-11 11:28+0800\n"
+"PO-Revision-Date: 2022-06-01 19:30+0100\n"
+"Last-Translator: Albano Battistella\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: MainWindow.vala\n"
+
+#: MainWindow.vala:72
+msgid "Back"
+msgstr "Indietro"
+
+#: MainWindow.vala:73
+msgid "Delete file"
+msgstr "Elimina file"
+
+#: MainWindow.vala:74
+msgid "Rename file"
+msgstr "Rinomina file"
+
+#: MainWindow.vala:75
+msgid "Play"
+msgstr "Avvia"
+
+#: MainWindow.vala:76
+msgid "Stop"
+msgstr "Ferma"
+
+#: MainWindow.vala:77
+msgid "Start recording"
+msgstr "Inizia a registrare"
+
+#: MainWindow.vala:78
+msgid "Stop recording"
+msgstr "Interrompi la registrazione"
+
+#: MainWindow.vala:79
+msgid "Open the Records folder"
+msgstr "Apri la cartella Record"
+
+#: MainWindow.vala:120
+msgid "Welcome!"
+msgstr "Benvenuto!"
+
+#: MainWindow.vala:131
+msgid "_Name:"
+msgstr "_Nome:"
+
+#: MainWindow.vala:161
+msgid "Please choose a file"
+msgstr "Scegli un file"
+
+#: MainWindow.vala:166
+msgid "Now playing: "
+msgstr "Ora in riproduzione: "
+
+#: MainWindow.vala:173
+msgid "Playback stopped"
+msgstr "Riproduzione interrotta"
+
+#: MainWindow.vala:186
+msgid "Recording is in progress"
+msgstr "La registrazione è in corso"
+
+#: MainWindow.vala:188
+msgid ""
+"Error!\n"
+"Failed to start recording"
+msgstr ""
+"Errore!\n"
+"Impossibile avviare la registrazione"
+
+#: MainWindow.vala:198
+msgid "Recording stopped"
+msgstr "Registrazione interrotta"
+
+#: MainWindow.vala:228 MainWindow.vala:272
+msgid "Choose a file"
+msgstr "Scegli un file"
+
+#: MainWindow.vala:238
+msgid "Enter the name"
+msgstr "Inserisci il nome"
+
+#: MainWindow.vala:247
+msgid "Rename failed"
+msgstr "Rinomina fallito"
+
+#: MainWindow.vala:252
+msgid "A file with the same name already exists"
+msgstr "Esiste già un file con lo stesso nome"
+
+#: MainWindow.vala:276
+msgid "Delete file "
+msgstr "Elimina file "
+
+#: MainWindow.vala:277
+msgid "Question"
+msgstr "Domanda"
+
+#: MainWindow.vala:283
+msgid "Delete failed"
+msgstr "Eliminazione non riuscita"
+
+#: MainWindow.vala:338
+msgid "Message"
+msgstr "Messaggio"
+
