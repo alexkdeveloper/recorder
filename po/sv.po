@@ -1,0 +1,115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.alexkdeveloper.recorder\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-06-02 07:45+0200\n"
+"Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
+"Language-Team: Svenska Språkfiler\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: MainWindow.vala\n"
+
+#: MainWindow.vala:72
+msgid "Back"
+msgstr "Tillbaka"
+
+#: MainWindow.vala:73
+msgid "Delete file"
+msgstr "Ta bort fil"
+
+#: MainWindow.vala:74
+msgid "Rename file"
+msgstr "Byt namn på fil"
+
+#: MainWindow.vala:75
+msgid "Play"
+msgstr "Spela upp"
+
+#: MainWindow.vala:76
+msgid "Stop"
+msgstr "Stopp"
+
+#: MainWindow.vala:77
+msgid "Start recording"
+msgstr "Starta inspelning"
+
+#: MainWindow.vala:78
+msgid "Stop recording"
+msgstr "Sluta spela in"
+
+#: MainWindow.vala:79
+msgid "Open the Records folder"
+msgstr "Öppna inspelningsmappen"
+
+#: MainWindow.vala:120
+msgid "Welcome!"
+msgstr "Välkommen!"
+
+#: MainWindow.vala:131
+msgid "_Name:"
+msgstr "_Namn:"
+
+#: MainWindow.vala:161
+msgid "Please choose a file"
+msgstr "Välj en fil"
+
+#: MainWindow.vala:166
+msgid "Now playing: "
+msgstr "Nu spelas: "
+
+#: MainWindow.vala:173
+msgid "Playback stopped"
+msgstr "Uppspelning stoppad"
+
+#: MainWindow.vala:186
+msgid "Recording is in progress"
+msgstr "Inspelning pågår"
+
+#: MainWindow.vala:188
+msgid ""
+"Error!\n"
+"Failed to start recording"
+msgstr ""
+"Fel!\n"
+"Kunde inte starta inspelning."
+
+#: MainWindow.vala:198
+msgid "Recording stopped"
+msgstr "Inspelning stoppad"
+
+#: MainWindow.vala:228 MainWindow.vala:272
+msgid "Choose a file"
+msgstr "Välj en fil"
+
+#: MainWindow.vala:238
+msgid "Enter the name"
+msgstr "Ange namn"
+
+#: MainWindow.vala:247
+msgid "Rename failed"
+msgstr "Namnbyte misslyckades"
+
+#: MainWindow.vala:252
+msgid "A file with the same name already exists"
+msgstr "Det finns redan en fil med samma namn."
+
+#: MainWindow.vala:276
+msgid "Delete file "
+msgstr "Ta bort filen "
+
+#: MainWindow.vala:277
+msgid "Question"
+msgstr "Fråga"
+
+#: MainWindow.vala:283
+msgid "Delete failed"
+msgstr "Borttagning misslyckades"
+
+#: MainWindow.vala:338
+msgid "Message"
+msgstr "Meddelande"
