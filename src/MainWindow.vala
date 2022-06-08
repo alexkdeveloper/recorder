@@ -4,7 +4,7 @@ using Gst;
 
 namespace Recorder {
 
-    public class MainWindow : Gtk.ApplicationWindow {
+    public class MainWindow : Adw.ApplicationWindow {
 
 private Stack stack;
 private Box vbox_list_page;
@@ -28,7 +28,7 @@ private string directory_path;
 private string item;
 Gst.Bus player_bus;
 
-        public MainWindow(Gtk.Application application) {
+        public MainWindow(Adw.Application application) {
             GLib.Object(application: application,
                          title: "Recorder",
                          resizable: true,
@@ -42,9 +42,6 @@ Gst.Bus player_bus;
         }
 
         construct {
-        HeaderBar headerbar = new HeaderBar();
-        headerbar.get_style_context().add_class("flat");
-        set_titlebar(headerbar);
         back_button = new Button ();
             back_button.set_icon_name ("go-previous-symbolic");
             back_button.vexpand = false;
@@ -85,6 +82,7 @@ Gst.Bus player_bus;
         open_directory_button.clicked.connect(on_open_directory_clicked);
         play_button.clicked.connect(on_play_clicked);
         stop_button.clicked.connect(on_stop_clicked);
+        var headerbar = new Adw.HeaderBar();
         headerbar.pack_start(back_button);
         headerbar.pack_start(delete_button);
         headerbar.pack_start(edit_button);
@@ -103,7 +101,10 @@ Gst.Bus player_bus;
           stack.set_margin_top(10);
           stack.set_margin_start(10);
           stack.set_margin_bottom(10);
-          set_child(stack);
+          var main_box = new Box(Orientation.VERTICAL, 0);
+          main_box.append(headerbar);
+          main_box.append(stack);
+          set_content(main_box);
    list_store = new Gtk.ListStore(Columns.N_COLUMNS, typeof(string));
            tree_view = new TreeView.with_model(list_store);
            var text = new CellRendererText ();

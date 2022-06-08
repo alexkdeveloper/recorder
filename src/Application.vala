@@ -1,7 +1,7 @@
 
 
 namespace Recorder {
-    public class Application : Gtk.Application {
+    public class Application : Adw.Application {
         public MainWindow app_window;
 
         public Application() {
