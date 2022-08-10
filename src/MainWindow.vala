@@ -139,7 +139,7 @@ Gst.Bus player_bus;
         var vbox_name = new Box (Orientation.VERTICAL, 5);
         vbox_name.append (label_name);
         vbox_name.append (entry_name);
-        var button_ok = new Button.with_label("OK");
+        var button_ok = new Button.with_label(_("OK"));
         button_ok.clicked.connect(on_ok_clicked);
         vbox_rename_page = new Box(Orientation.VERTICAL,10);
         vbox_rename_page.append(vbox_name);
