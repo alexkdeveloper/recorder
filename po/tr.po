@@ -1,0 +1,111 @@
+# Turkish translation for com.github.alexkdeveloper.recorder.
+# Copyright (C) 2022 com.github.alexkdeveloper.recorder's COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.alexkdeveloper.recorder package.
+#
+# Sabri Ünal <libreajans@gmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.alexkdeveloper.recorder master\n"
+"POT-Creation-Date: 2022-05-11 11:28+0800\n"
+"PO-Revision-Date: 2022-08-10 15:28+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: MainWindow.vala:72
+msgid "Back"
+msgstr "Geri"
+
+#: MainWindow.vala:73
+msgid "Delete file"
+msgstr "Dosyayı sil"
+
+#: MainWindow.vala:74
+msgid "Rename file"
+msgstr "Dosyayı yeniden adlandır"
+
+#: MainWindow.vala:75
+msgid "Play"
+msgstr "Oynat"
+
+#: MainWindow.vala:76
+msgid "Stop"
+msgstr "Durdur"
+
+#: MainWindow.vala:77
+msgid "Start recording"
+msgstr "Kaydı başlat"
+
+#: MainWindow.vala:78
+msgid "Stop recording"
+msgstr "Kaydı durdur"
+
+#: MainWindow.vala:79
+msgid "Open the Records folder"
+msgstr "Kayıtlar klasörünü aç"
+
+#: MainWindow.vala:120
+msgid "Welcome!"
+msgstr "Hoş Geldiniz!"
+
+#: MainWindow.vala:131
+msgid "_Name:"
+msgstr "_Ad:"
+
+#: MainWindow.vala:161
+msgid "Please choose a file"
+msgstr "Dosya adı seçiniz"
+
+#: MainWindow.vala:166
+msgid "Now playing: "
+msgstr "Oynatılıyor: "
+
+#: MainWindow.vala:173
+msgid "Playback stopped"
+msgstr "Oynatma durduruldu"
+
+#: MainWindow.vala:186
+msgid "Recording is in progress"
+msgstr "Kayıt sürüyor"
+
+#: MainWindow.vala:198
+msgid "Recording stopped"
+msgstr "Kayıt durduruldu"
+
+#: MainWindow.vala:228 MainWindow.vala:272
+msgid "Choose a file"
+msgstr "Dosya seçiniz"
+
+#: MainWindow.vala:238
+msgid "Enter the name"
+msgstr "Adı giriniz"
+
+#: MainWindow.vala:247
+msgid "Rename failed"
+msgstr "Yeniden adlandırılamadı"
+
+#: MainWindow.vala:252
+msgid "A file with the same name already exists"
+msgstr "Aynı adla bir dosya zaten var"
+
+#: MainWindow.vala:276
+msgid "Delete file "
+msgstr "Dosyayı sil "
+
+#: MainWindow.vala:277
+msgid "Question"
+msgstr "Soru"
+
+#: MainWindow.vala:283
+msgid "Delete failed"
+msgstr "Silinemedi"
+
+#: MainWindow.vala:338
+msgid "Message"
+msgstr "İleti"
