@@ -185,13 +185,13 @@ private void on_record_clicked(){
 try {
    mp3_recorder.start_recording();
  } catch (Gst.ParseError e) {
-    alert(e.message);
+    alert("",e.message);
     return;
  }
  if(mp3_recorder.is_recording){
      current_action.set_text(_("Recording is in progress"));
  }else{
-     alert(_("Error!\nFailed to start recording"));
+     alert(_("Error!\nFailed to start recording"),"");
      return;
  }
  show_files();
@@ -255,7 +255,7 @@ private void on_stop_record_clicked(){
                 }
             }else{
                 if(select_file.get_basename() != edit_file.get_basename()){
-                    alert(_("A file with the same name already exists"));
+                    alert(_("A file with the same name already exists"),"");
                     entry_name.grab_focus();
                     return;
                 }
@@ -279,12 +279,16 @@ private void on_stop_record_clicked(){
                return;
            }
            GLib.File file = GLib.File.new_for_path(directory_path+"/"+item);
-         var delete_file_dialog = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL,Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Delete file ")+file.get_basename()+"?");
-         delete_file_dialog.set_title(_("Question"));
-         delete_file_dialog.show ();
-         delete_file_dialog.response.connect((response) => {
-                if (response == Gtk.ResponseType.OK) {
-                     FileUtils.remove (directory_path+"/"+item);
+        var delete_file_dialog = new Adw.MessageDialog(this, _("Delete file ")+file.get_basename()+"?", "");
+            delete_file_dialog.add_response("cancel", _("_Cancel"));
+            delete_file_dialog.add_response("ok", _("_OK"));
+            delete_file_dialog.set_default_response("ok");
+            delete_file_dialog.set_close_response("cancel");
+            delete_file_dialog.set_response_appearance("ok", SUGGESTED);
+            delete_file_dialog.show();
+            delete_file_dialog.response.connect((response) => {
+                if (response == "ok") {
+                    FileUtils.remove (directory_path+"/"+item);
                     if(file.query_exists()){
                        set_toast(_("Delete failed"));
                     }else{
@@ -345,11 +349,15 @@ private void on_stop_record_clicked(){
        overlay.add_toast(toast);
    }
 
-   private void alert (string str){
-          var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title(_("Message"));
-          dialog_alert.response.connect((_) => { dialog_alert.close(); });
-          dialog_alert.show();
-       }
+   private void alert (string heading, string body){
+            var dialog_alert = new Adw.MessageDialog(this, heading, body);
+            if (body != "") {
+                dialog_alert.set_body(body);
+            }
+            dialog_alert.add_response("ok", _("_OK"));
+            dialog_alert.set_response_appearance("ok", SUGGESTED);
+            dialog_alert.response.connect((_) => { dialog_alert.close(); });
+            dialog_alert.show();
+        }
    }
 }
