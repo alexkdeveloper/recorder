@@ -133,7 +133,6 @@ Gst.Bus player_bus;
         clear_name.add_css_class("destructive-action");
         clear_name.add_css_class("circular");
         clear_name.valign = Align.CENTER;
-        clear_name.visible = false;
         entry_name = new Adw.EntryRow();
         entry_name.add_suffix(clear_name);
         entry_name.set_title(_("Name"));
