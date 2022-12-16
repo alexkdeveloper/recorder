@@ -51,8 +51,8 @@ msgid "Welcome!"
 msgstr "Välkommen!"
 
 #: MainWindow.vala:131
-msgid "_Name:"
-msgstr "_Namn:"
+msgid "Name"
+msgstr "Namn"
 
 #: MainWindow.vala:161
 msgid "Please choose a file"
