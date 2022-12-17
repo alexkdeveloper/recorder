@@ -115,7 +115,9 @@ Gst.Bus player_bus;
             propagate_natural_width = true
         };
         var clamp = new Adw.Clamp(){
-            tightening_threshold = 100
+            tightening_threshold = 100,
+            margin_top = 5,
+            margin_bottom = 5
         };
         clamp.set_child(list_box);
 
