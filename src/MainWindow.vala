@@ -124,7 +124,7 @@ Gst.Bus player_bus;
         scroll.set_child(clamp);
         current_action = new Label(_("Welcome!"));
         current_action.add_css_class("title-4");
-	    current_action.wrap = true;
+	current_action.wrap = true;
         current_action.wrap_mode = WORD;
    vbox_list_page = new Box(Orientation.VERTICAL,5);
    vbox_list_page.append (current_action);
