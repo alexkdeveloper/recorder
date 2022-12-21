@@ -214,6 +214,7 @@ try {
      return;
  }
  show_files();
+ list_box.select_row(list_box.get_row_at_index(get_index(mp3_recorder.filename + ".mp3")));
  set_widget_visible(record_button,false);
  set_widget_visible(stop_record_button,true);
 }
@@ -272,6 +273,7 @@ private void on_stop_record_clicked(){
                 }
             }
       show_files();
+	  list_box.select_row(list_box.get_row_at_index(get_index(edit_file.get_basename())));
       on_back_clicked();
    }
 
@@ -332,6 +334,25 @@ private void on_stop_record_clicked(){
             list_box.append(row);
            }
        }
+
+     private int get_index(string item){
+            int index_of_item = 0;
+            try {
+            Dir dir = Dir.open (directory_path, 0);
+            string? name = null;
+            int index = 0;
+            while ((name = dir.read_name ()) != null) {
+                index++;
+                if(name == item){
+                  index_of_item = index - 1;
+                  break;
+                }
+            }
+        } catch (FileError err) {
+            stderr.printf (err.message);
+          }
+          return index_of_item;
+        }
 
    private void set_widget_visible (Gtk.Widget widget, bool visible) {
          widget.visible = !visible;
