@@ -273,7 +273,7 @@ private void on_stop_record_clicked(){
                 }
             }
       show_files();
-	  list_box.select_row(list_box.get_row_at_index(get_index(edit_file.get_basename())));
+      list_box.select_row(list_box.get_row_at_index(get_index(edit_file.get_basename())));
       on_back_clicked();
    }
 
