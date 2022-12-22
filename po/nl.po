@@ -1,0 +1,122 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.alexkdeveloper.recorder package.
+#
+# Heimen Stoffels <vistausss@fastmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.alexkdeveloper.recorder\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-22 16:39+0100\n"
+"PO-Revision-Date: 2022-12-22 16:41+0100\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.12.0\n"
+
+#: src/MainWindow.vala:68
+msgid "Back"
+msgstr "Terug"
+
+#: src/MainWindow.vala:69
+msgid "Delete file"
+msgstr "Verwijderen"
+
+#: src/MainWindow.vala:70
+msgid "Rename file"
+msgstr "Naam wijzigen"
+
+#: src/MainWindow.vala:71
+msgid "Play"
+msgstr "Beluisteren"
+
+#: src/MainWindow.vala:72
+msgid "Stop"
+msgstr "Stoppen"
+
+#: src/MainWindow.vala:73
+msgid "Start recording"
+msgstr "Opname starten"
+
+#: src/MainWindow.vala:74
+msgid "Stop recording"
+msgstr "Opname stoppen"
+
+#: src/MainWindow.vala:75
+msgid "Open the Records folder"
+msgstr "Opnamemap openen"
+
+#: src/MainWindow.vala:126
+msgid "Welcome!"
+msgstr "Welkom!"
+
+#: src/MainWindow.vala:141
+msgid "Name"
+msgstr "Naam"
+
+#: src/MainWindow.vala:151
+msgid "OK"
+msgstr "Oké"
+
+#: src/MainWindow.vala:186
+msgid "Please choose a file"
+msgstr "Kies een bestand"
+
+#: src/MainWindow.vala:191
+msgid "Now playing: "
+msgstr "U luistert naar "
+
+#: src/MainWindow.vala:198
+msgid "Playback stopped"
+msgstr "Het afspelen is gestopt"
+
+#: src/MainWindow.vala:211
+msgid "Recording is in progress"
+msgstr "Er wordt een opname gemaakt"
+
+#: src/MainWindow.vala:213
+msgid ""
+"Error!\n"
+"Failed to start recording"
+msgstr ""
+"Foutmelding!\n"
+"Er kan geen opname worden gemaakt"
+
+#: src/MainWindow.vala:224
+msgid "Recording stopped"
+msgstr "De opname is gestopt"
+
+#: src/MainWindow.vala:246 src/MainWindow.vala:288
+msgid "Choose a file"
+msgstr "Kies een bestand"
+
+#: src/MainWindow.vala:256
+msgid "Enter the name"
+msgstr "Voer een naam in"
+
+#: src/MainWindow.vala:265
+msgid "Rename failed"
+msgstr "De naam kan niet worden gewijzigd"
+
+#: src/MainWindow.vala:270
+msgid "A file with the same name already exists"
+msgstr "Er is al een bestand met deze naam"
+
+#: src/MainWindow.vala:292
+msgid "Delete file "
+msgstr "Verwijderen "
+
+#: src/MainWindow.vala:293
+msgid "_Cancel"
+msgstr "_Annuleren"
+
+#: src/MainWindow.vala:294 src/MainWindow.vala:389
+msgid "_OK"
+msgstr "_Oké"
+
+#: src/MainWindow.vala:303
+msgid "Delete failed"
+msgstr "Het verwijderen is mislukt"
