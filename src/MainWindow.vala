@@ -85,6 +85,9 @@ Gst.Bus player_bus;
                if(entry_search.is_visible()){
                   entry_search.hide();
                   entry_search.set_text("");
+                  if(item != null){
+                     list_box.select_row(list_box.get_row_at_index(get_index(item)));
+                  }
                }else{
                   entry_search.show();
                   entry_search.grab_focus();
