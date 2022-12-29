@@ -12,9 +12,11 @@ private Box vbox_rename_page;
 private dynamic Element player;
 private ListBox list_box;
 private Adw.EntryRow entry_name;
+private SearchEntry entry_search;
 private Button back_button;
 private Button delete_button;
 private Button edit_button;
+private Button search_button;
 private Button play_button;
 private Button stop_button;
 private Button record_button;
@@ -41,15 +43,18 @@ Gst.Bus player_bus;
         }
 
         construct {
-        back_button = new Button ();
+        back_button = new Button();
             back_button.set_icon_name ("go-previous-symbolic");
             back_button.vexpand = false;
-        delete_button = new Button ();
+        delete_button = new Button();
             delete_button.set_icon_name ("list-remove-symbolic");
             delete_button.vexpand = false;
-        edit_button = new Button ();
+        edit_button = new Button();
             edit_button.set_icon_name ("document-edit-symbolic");
             edit_button.vexpand = false;
+        search_button = new Button();
+            search_button.set_icon_name("edit-find-symbolic");
+            search_button.vexpand = false;
         play_button = new Button();
             play_button.set_icon_name ("media-playback-start-symbolic");
             play_button.vexpand = false;
@@ -62,34 +67,64 @@ Gst.Bus player_bus;
         stop_record_button = new Button();
             stop_record_button.set_icon_name ("process-stop-symbolic");
             stop_record_button.vexpand = false;
-        var open_directory_button = new Button();
-            open_directory_button.set_icon_name ("folder-open-symbolic");
-            open_directory_button.vexpand = false;
+        var menu_button = new Gtk.MenuButton();
+            menu_button.set_icon_name ("open-menu-symbolic");
+            menu_button.vexpand = false;
         back_button.set_tooltip_text(_("Back"));
         delete_button.set_tooltip_text(_("Delete file"));
         edit_button.set_tooltip_text(_("Rename file"));
+        search_button.set_tooltip_text(_("Search"));
         play_button.set_tooltip_text(_("Play"));
         stop_button.set_tooltip_text(_("Stop"));
         record_button.set_tooltip_text(_("Start recording"));
         stop_record_button.set_tooltip_text(_("Stop recording"));
-        open_directory_button.set_tooltip_text(_("Open the Records folder"));
         back_button.clicked.connect(on_back_clicked);
         delete_button.clicked.connect(on_delete_dialog);
         edit_button.clicked.connect(on_edit_clicked);
+        search_button.clicked.connect(()=>{
+               if(entry_search.is_visible()){
+                  entry_search.hide();
+                  entry_search.set_text("");
+               }else{
+                  entry_search.show();
+                  entry_search.grab_focus();
+               }
+            });
         record_button.clicked.connect(on_record_clicked);
         stop_record_button.clicked.connect(on_stop_record_clicked);
-        open_directory_button.clicked.connect(on_open_directory_clicked);
         play_button.clicked.connect(on_play_clicked);
         stop_button.clicked.connect(on_stop_clicked);
         var headerbar = new Adw.HeaderBar();
         headerbar.pack_start(back_button);
         headerbar.pack_start(delete_button);
         headerbar.pack_start(edit_button);
+        headerbar.pack_start(search_button);
+        headerbar.pack_end(menu_button);
         headerbar.pack_end(stop_button);
         headerbar.pack_end(play_button);
-        headerbar.pack_end(open_directory_button);
         headerbar.pack_end(record_button);
         headerbar.pack_end(stop_record_button);
+        var open_directory_action = new GLib.SimpleAction ("open", null);
+        open_directory_action.activate.connect (on_open_directory_clicked);
+        var about_action = new GLib.SimpleAction ("about", null);
+        about_action.activate.connect (about);
+        var quit_action = new GLib.SimpleAction ("quit", null);
+        var app = GLib.Application.get_default();
+        quit_action.activate.connect(()=>{
+               app.quit();
+            });
+        app.add_action(open_directory_action);
+        app.add_action(about_action);
+        app.add_action(quit_action);
+        var menu = new GLib.Menu();
+        var item_open = new GLib.MenuItem (_("Open the Records folder"), "app.open");
+        var item_about = new GLib.MenuItem (_("About Recorder"), "app.about");
+        var item_quit = new GLib.MenuItem (_("Quit"), "app.quit");
+        menu.append_item (item_open);
+        menu.append_item (item_about);
+        menu.append_item (item_quit);
+        var popover = new PopoverMenu.from_model(menu);
+        menu_button.set_popover(popover);
         set_widget_visible(back_button,false);
         set_widget_visible(stop_record_button, false);
         set_widget_visible(stop_button,false);
@@ -109,7 +144,7 @@ Gst.Bus player_bus;
         list_box = new Gtk.ListBox ();
         list_box.vexpand = true;
         list_box.add_css_class("boxed-list");
-        list_box.selected_rows_changed.connect(on_select_item);
+        list_box.row_selected.connect(on_select_item);
         var scroll = new Gtk.ScrolledWindow () {
             propagate_natural_height = true,
             propagate_natural_width = true
@@ -123,11 +158,19 @@ Gst.Bus player_bus;
 
         scroll.set_child(clamp);
 	
+	    entry_search = new SearchEntry();
+        entry_search.hexpand = true;
+        entry_search.changed.connect(show_files);
+        entry_search.margin_start = 35;
+        entry_search.margin_end = 35;
+        entry_search.hide();
+
         current_action = new Label(_("Welcome!"));
         current_action.add_css_class("title-4");
 	current_action.wrap = true;
         current_action.wrap_mode = WORD;
    vbox_list_page = new Box(Orientation.VERTICAL,5);
+   vbox_list_page.append (entry_search);
    vbox_list_page.append (current_action);
    vbox_list_page.append (scroll);
    stack.add_child(vbox_list_page);
@@ -315,7 +358,13 @@ private void on_stop_record_clicked(){
             Dir dir = Dir.open (directory_path, 0);
             string? name = null;
             while ((name = dir.read_name ()) != null) {
-                list.append(name);
+                 if(entry_search.is_visible()){
+                    if(name.down().contains(entry_search.get_text().down())){
+                       list.append(name);
+                    }
+                    }else{
+                       list.append(name);
+                }
             }
         } catch (FileError err) {
             stderr.printf (err.message);
@@ -363,17 +412,36 @@ private void on_stop_record_clicked(){
        set_widget_visible(back_button,false);
        set_widget_visible(delete_button,true);
        set_widget_visible(edit_button,true);
+       set_widget_visible(search_button,true);
    }
 
    private void set_buttons_on_rename_page(){
        set_widget_visible(back_button,true);
        set_widget_visible(delete_button,false);
        set_widget_visible(edit_button,false);
+       set_widget_visible(search_button,false);
    }
 
    private bool is_empty(string str){
         return str.strip().length == 0;
       }
+
+     private void about () {
+	        var win = new Adw.AboutWindow () {
+                application_name = "Recorder",
+                application_icon = "com.github.alexkdeveloper.recorder",
+                version = "1.0.10",
+                copyright = "Copyright © 2022-2023 Alex Kryuchkov",
+                license_type = License.GPL_3_0,
+                developer_name = "Alex Kryuchkov",
+                developers = {"Alex Kryuchkov https://github.com/alexkdeveloper"},
+                translator_credits = _("translator-credits"),
+                website = "https://github.com/alexkdeveloper/recorder",
+                issue_url = "https://github.com/alexkdeveloper/recorder/issues"
+            };
+            win.set_transient_for (this);
+            win.show ();
+        }
 
    private void set_toast (string str){
        var toast = new Adw.Toast(str);

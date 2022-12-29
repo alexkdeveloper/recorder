@@ -113,3 +113,7 @@ msgstr "Borttagning misslyckades"
 #: MainWindow.vala:338
 msgid "Message"
 msgstr "Meddelande"
+
+#: MainWindow.vala:439
+msgid "translator-credits"
+msgstr "Åke Engelbrektson <eson@svenskasprakfiler.se>"

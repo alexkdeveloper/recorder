@@ -114,3 +114,7 @@ msgstr "Odstranění se nezdařilo"
 #: MainWindow.vala:338
 msgid "Message"
 msgstr "Zpráva"
+
+#: MainWindow.vala:439
+msgid "translator-credits"
+msgstr "vikdevelop"

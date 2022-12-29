@@ -115,3 +115,6 @@ msgstr "Eliminazione non riuscita"
 msgid "Message"
 msgstr "Messaggio"
 
+#: MainWindow.vala:439
+msgid "translator-credits"
+msgstr "Albano Battistella"

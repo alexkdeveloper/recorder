@@ -120,3 +120,7 @@ msgstr "_Oké"
 #: src/MainWindow.vala:303
 msgid "Delete failed"
 msgstr "Het verwijderen is mislukt"
+
+#: src/MainWindow.vala:439
+msgid "translator-credits"
+msgstr "Heimen Stoffels <vistausss@fastmail.com>"

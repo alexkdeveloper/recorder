@@ -109,3 +109,7 @@ msgstr "Silinemedi"
 #: MainWindow.vala:338
 msgid "Message"
 msgstr "İleti"
+
+#: MainWindow.vala:439
+msgid "translator-credits"
+msgstr "Sabri Ünal <libreajans@gmail.com>"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-05-11 11:28+0800\n"
-"PO-Revision-Date: 2022-05-11 11:30+0800\n"
+"POT-Creation-Date: 2022-12-29 21:33+0800\n"
+"PO-Revision-Date: 2022-12-29 21:35+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -11,67 +11,83 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ../src\n"
 "X-Poedit-SearchPath-0: MainWindow.vala\n"
 
-#: MainWindow.vala:72
+#: MainWindow.vala:70
 msgid "Back"
 msgstr "Назад"
 
-#: MainWindow.vala:73
+#: MainWindow.vala:71
 msgid "Delete file"
 msgstr "Удалить файл"
 
-#: MainWindow.vala:74
+#: MainWindow.vala:72
 msgid "Rename file"
 msgstr "Переименовать файл"
 
-#: MainWindow.vala:75
+#: MainWindow.vala:73
 msgid "Play"
 msgstr "Запустить"
 
-#: MainWindow.vala:76
+#: MainWindow.vala:74
 msgid "Stop"
 msgstr "Остановить"
 
-#: MainWindow.vala:77
+#: MainWindow.vala:75
 msgid "Start recording"
 msgstr "Записать"
 
-#: MainWindow.vala:78
+#: MainWindow.vala:76
 msgid "Stop recording"
 msgstr "Остановить запись"
 
-#: MainWindow.vala:79
+#: MainWindow.vala:112
+msgid "Search"
+msgstr "Поиск"
+
+#: MainWindow.vala:113
 msgid "Open the Records folder"
 msgstr "Открыть папку с записями"
 
-#: MainWindow.vala:120
+#: MainWindow.vala:114
+msgid "About Recorder"
+msgstr "О Программе"
+
+#: MainWindow.vala:115
+msgid "Quit"
+msgstr "Выйти"
+
+#: MainWindow.vala:171
 msgid "Welcome!"
 msgstr "Добро пожаловать!"
 
-#: MainWindow.vala:131
+#: MainWindow.vala:187
 msgid "Name"
 msgstr "Имя файла"
 
-#: MainWindow.vala:161
+#: MainWindow.vala:197
+msgid "OK"
+msgstr ""
+
+#: MainWindow.vala:232
 msgid "Please choose a file"
 msgstr "Пожалуйста, выберите файл"
 
-#: MainWindow.vala:166
+#: MainWindow.vala:237
 msgid "Now playing: "
 msgstr "Сейчас играет: "
 
-#: MainWindow.vala:173
+#: MainWindow.vala:244
 msgid "Playback stopped"
 msgstr "Воспроизведение остановлено"
 
-#: MainWindow.vala:186
+#: MainWindow.vala:257
 msgid "Recording is in progress"
 msgstr "Идет запись"
 
-#: MainWindow.vala:188
+#: MainWindow.vala:259
 msgid ""
 "Error!\n"
 "Failed to start recording"
@@ -79,39 +95,48 @@ msgstr ""
 "Ошибка!\n"
 "Не удалось начать запись"
 
-#: MainWindow.vala:198
+#: MainWindow.vala:270
 msgid "Recording stopped"
 msgstr "Запись остановлена"
 
-#: MainWindow.vala:228 MainWindow.vala:272
+#: MainWindow.vala:292 MainWindow.vala:334
 msgid "Choose a file"
 msgstr "Выберите файл"
 
-#: MainWindow.vala:238
+#: MainWindow.vala:302
 msgid "Enter the name"
 msgstr "Введите имя файла"
 
-#: MainWindow.vala:247
+#: MainWindow.vala:311
 msgid "Rename failed"
 msgstr "Не удалось переименовать"
 
-#: MainWindow.vala:252
+#: MainWindow.vala:316
 msgid "A file with the same name already exists"
 msgstr "Файл с таким именем уже существует"
 
-#: MainWindow.vala:276
+#: MainWindow.vala:338
 msgid "Delete file "
 msgstr "Удалить файл "
 
-#: MainWindow.vala:277
-msgid "Question"
-msgstr "Вопрос"
+#: MainWindow.vala:339
+msgid "_Cancel"
+msgstr ""
 
-#: MainWindow.vala:283
+#: MainWindow.vala:340 MainWindow.vala:458
+msgid "_OK"
+msgstr ""
+
+#: MainWindow.vala:349
 msgid "Delete failed"
 msgstr "Не удалось удалить"
 
-#: MainWindow.vala:338
-msgid "Message"
-msgstr "Сообщение"
+#: MainWindow.vala:439
+msgid "translator-credits"
+msgstr "Alex Kryuchkov https://github.com/alexkdeveloper"
 
+#~ msgid "Question"
+#~ msgstr "Вопрос"
+
+#~ msgid "Message"
+#~ msgstr "Сообщение"
