@@ -158,7 +158,7 @@ Gst.Bus player_bus;
 
         scroll.set_child(clamp);
 	
-	    entry_search = new SearchEntry();
+	entry_search = new SearchEntry();
         entry_search.hexpand = true;
         entry_search.changed.connect(show_files);
         entry_search.margin_start = 35;
