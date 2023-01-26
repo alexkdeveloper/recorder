@@ -335,7 +335,7 @@ private void on_stop_record_clicked(){
         return;
     }
            GLib.File file = GLib.File.new_for_path(directory_path+"/"+item);
-        var delete_file_dialog = new Adw.MessageDialog(this, _("Delete file ")+file.get_basename()+"?", "");
+        var delete_file_dialog = new Adw.MessageDialog(this, _("Delete file %s?").printf(file.get_basename()), "");
             delete_file_dialog.add_response("cancel", _("_Cancel"));
             delete_file_dialog.add_response("ok", _("_OK"));
             delete_file_dialog.set_default_response("ok");
