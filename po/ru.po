@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-29 21:33+0800\n"
-"PO-Revision-Date: 2022-12-29 21:35+0800\n"
+"POT-Creation-Date: 2023-01-26 10:22+0800\n"
+"PO-Revision-Date: 2023-01-26 10:23+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -15,47 +15,47 @@ msgstr ""
 "X-Poedit-Basepath: ../src\n"
 "X-Poedit-SearchPath-0: MainWindow.vala\n"
 
-#: MainWindow.vala:70
+#: MainWindow.vala:73
 msgid "Back"
 msgstr "Назад"
 
-#: MainWindow.vala:71
+#: MainWindow.vala:74
 msgid "Delete file"
 msgstr "Удалить файл"
 
-#: MainWindow.vala:72
+#: MainWindow.vala:75
 msgid "Rename file"
 msgstr "Переименовать файл"
 
-#: MainWindow.vala:73
-msgid "Play"
-msgstr "Запустить"
-
-#: MainWindow.vala:74
-msgid "Stop"
-msgstr "Остановить"
-
-#: MainWindow.vala:75
-msgid "Start recording"
-msgstr "Записать"
-
 #: MainWindow.vala:76
-msgid "Stop recording"
-msgstr "Остановить запись"
-
-#: MainWindow.vala:112
 msgid "Search"
 msgstr "Поиск"
 
-#: MainWindow.vala:113
+#: MainWindow.vala:77
+msgid "Play"
+msgstr "Запустить"
+
+#: MainWindow.vala:78
+msgid "Stop"
+msgstr "Остановить"
+
+#: MainWindow.vala:79
+msgid "Start recording"
+msgstr "Записать"
+
+#: MainWindow.vala:80
+msgid "Stop recording"
+msgstr "Остановить запись"
+
+#: MainWindow.vala:123
 msgid "Open the Records folder"
 msgstr "Открыть папку с записями"
 
-#: MainWindow.vala:114
+#: MainWindow.vala:124
 msgid "About Recorder"
 msgstr "О Программе"
 
-#: MainWindow.vala:115
+#: MainWindow.vala:125
 msgid "Quit"
 msgstr "Выйти"
 
@@ -116,14 +116,15 @@ msgid "A file with the same name already exists"
 msgstr "Файл с таким именем уже существует"
 
 #: MainWindow.vala:338
-msgid "Delete file "
-msgstr "Удалить файл "
+#, c-format
+msgid "Delete file %s?"
+msgstr "Удалить файл %s?"
 
 #: MainWindow.vala:339
 msgid "_Cancel"
 msgstr ""
 
-#: MainWindow.vala:340 MainWindow.vala:458
+#: MainWindow.vala:340 MainWindow.vala:460
 msgid "_OK"
 msgstr ""
 
@@ -131,7 +132,7 @@ msgstr ""
 msgid "Delete failed"
 msgstr "Не удалось удалить"
 
-#: MainWindow.vala:439
+#: MainWindow.vala:441
 msgid "translator-credits"
 msgstr "Alex Kryuchkov https://github.com/alexkdeveloper"
 
