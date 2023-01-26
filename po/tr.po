@@ -1,14 +1,14 @@
 # Turkish translation for com.github.alexkdeveloper.recorder.
-# Copyright (C) 2022 com.github.alexkdeveloper.recorder's COPYRIGHT HOLDER
+# Copyright (C) 2022-2023 com.github.alexkdeveloper.recorder's COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.alexkdeveloper.recorder package.
 #
-# Sabri Ünal <libreajans@gmail.com>, 2022.
+# Sabri Ünal <libreajans@gmail.com>, 2022, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.alexkdeveloper.recorder master\n"
-"POT-Creation-Date: 2022-05-11 11:28+0800\n"
-"PO-Revision-Date: 2022-08-10 15:28+0300\n"
+"POT-Creation-Date: 2023-01-25 17:31+0300\n"
+"PO-Revision-Date: 2023-01-25 17:31+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -17,99 +17,129 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: src\n"
 
-#: MainWindow.vala:72
+#: src/MP3Recorder.vala:147
+msgid "Recording is ongoing"
+msgstr "Kayıt sürüyor"
+
+#: src/MainWindow.vala:73
 msgid "Back"
 msgstr "Geri"
 
-#: MainWindow.vala:73
+#: src/MainWindow.vala:74
 msgid "Delete file"
 msgstr "Dosyayı sil"
 
-#: MainWindow.vala:74
+#: src/MainWindow.vala:75
 msgid "Rename file"
 msgstr "Dosyayı yeniden adlandır"
 
-#: MainWindow.vala:75
+#: src/MainWindow.vala:76
+msgid "Search"
+msgstr "Ara"
+
+#: src/MainWindow.vala:77
 msgid "Play"
 msgstr "Oynat"
 
-#: MainWindow.vala:76
+#: src/MainWindow.vala:78
 msgid "Stop"
 msgstr "Durdur"
 
-#: MainWindow.vala:77
+#: src/MainWindow.vala:79
 msgid "Start recording"
 msgstr "Kaydı başlat"
 
-#: MainWindow.vala:78
+#: src/MainWindow.vala:80
 msgid "Stop recording"
 msgstr "Kaydı durdur"
 
-#: MainWindow.vala:79
+#: src/MainWindow.vala:123
 msgid "Open the Records folder"
 msgstr "Kayıtlar klasörünü aç"
 
-#: MainWindow.vala:120
+#: src/MainWindow.vala:124
+msgid "About Recorder"
+msgstr "Ses Kaydedici Hakkında"
+
+#: src/MainWindow.vala:125
+msgid "Quit"
+msgstr "Çık"
+
+#: src/MainWindow.vala:171
 msgid "Welcome!"
 msgstr "Hoş Geldiniz!"
 
-#: MainWindow.vala:131
+#: src/MainWindow.vala:187
 msgid "Name"
 msgstr "Ad"
 
-#: MainWindow.vala:161
+#: src/MainWindow.vala:197
+msgid "OK"
+msgstr "Tamam"
+
+#: src/MainWindow.vala:232
 msgid "Please choose a file"
 msgstr "Dosya adı seçiniz"
 
-#: MainWindow.vala:166
+#: src/MainWindow.vala:237
 msgid "Now playing: "
 msgstr "Oynatılıyor: "
 
-#: MainWindow.vala:173
+#: src/MainWindow.vala:244
 msgid "Playback stopped"
 msgstr "Oynatma durduruldu"
 
-#: MainWindow.vala:186
+#: src/MainWindow.vala:257
 msgid "Recording is in progress"
 msgstr "Kayıt sürüyor"
 
-#: MainWindow.vala:198
+#: src/MainWindow.vala:259
+msgid ""
+"Error!\n"
+"Failed to start recording"
+msgstr ""
+"Hata!\n"
+"Kayıt başlatılamadı"
+
+#: src/MainWindow.vala:270
 msgid "Recording stopped"
 msgstr "Kayıt durduruldu"
 
-#: MainWindow.vala:228 MainWindow.vala:272
+#: src/MainWindow.vala:292 src/MainWindow.vala:334
 msgid "Choose a file"
 msgstr "Dosya seçiniz"
 
-#: MainWindow.vala:238
+#: src/MainWindow.vala:302
 msgid "Enter the name"
 msgstr "Adı giriniz"
 
-#: MainWindow.vala:247
+#: src/MainWindow.vala:311
 msgid "Rename failed"
 msgstr "Yeniden adlandırılamadı"
 
-#: MainWindow.vala:252
+#: src/MainWindow.vala:316
 msgid "A file with the same name already exists"
 msgstr "Aynı adla bir dosya zaten var"
 
-#: MainWindow.vala:276
-msgid "Delete file "
-msgstr "Dosyayı sil "
+#: src/MainWindow.vala:338
+msgid "Delete file %s?"
+msgstr "%s dosyası silinsin mi?"
 
-#: MainWindow.vala:277
-msgid "Question"
-msgstr "Soru"
+#: src/MainWindow.vala:339
+msgid "_Cancel"
+msgstr "_İptal"
 
-#: MainWindow.vala:283
+#: src/MainWindow.vala:340 src/MainWindow.vala:460
+msgid "_OK"
+msgstr "_Tamam"
+
+#: src/MainWindow.vala:349
 msgid "Delete failed"
 msgstr "Silinemedi"
 
-#: MainWindow.vala:338
-msgid "Message"
-msgstr "İleti"
-
-#: MainWindow.vala:439
+#: src/MainWindow.vala:441
 msgid "translator-credits"
 msgstr "Sabri Ünal <libreajans@gmail.com>"
