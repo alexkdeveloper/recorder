@@ -49,7 +49,7 @@ public class MP3Recorder : Object {
             throw new Gst.ParseError.NO_SUCH_ELEMENT ("Failed to create the GStreamer element \"encoder\"");
         }
 
-        filename = "Record " + date_time();
+        filename = date_time();
         full_path = Environment.get_user_data_dir () + "/Recordings/%s%s".printf (filename, ".mp3");
         sink.set ("location", full_path);
         debug ("The recording is temporary stored at %s", full_path);

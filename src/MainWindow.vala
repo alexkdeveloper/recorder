@@ -304,7 +304,7 @@ private void on_stop_record_clicked(){
                     return;
 		}
 		GLib.File select_file = GLib.File.new_for_path(directory_path+"/"+item);
-		GLib.File edit_file = GLib.File.new_for_path(directory_path+"/"+entry_name.get_text().strip());
+		GLib.File edit_file = GLib.File.new_for_path(directory_path+"/"+entry_name.get_text().replace("&", "and").strip());
 		if (select_file.get_basename() != edit_file.get_basename() && !edit_file.query_exists()){
                 FileUtils.rename(select_file.get_path(), edit_file.get_path());
                 if(!edit_file.query_exists()){
@@ -433,7 +433,7 @@ private void on_stop_record_clicked(){
 	        var win = new Adw.AboutWindow () {
                 application_name = "Recorder",
                 application_icon = "com.github.alexkdeveloper.recorder",
-                version = "1.0.11",
+                version = "1.0.12",
                 copyright = "Copyright © 2022-2023 Alex Kryuchkov",
                 license_type = License.GPL_3_0,
                 developer_name = "Alex Kryuchkov",
