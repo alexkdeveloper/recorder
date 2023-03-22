@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.alexkdeveloper.recorder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-22 16:39+0100\n"
-"PO-Revision-Date: 2022-12-22 16:41+0100\n"
+"POT-Creation-Date: 2023-03-22 11:33+0100\n"
+"PO-Revision-Date: 2023-03-22 11:34+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl\n"
@@ -15,69 +15,81 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: src/MainWindow.vala:68
+#: src/MainWindow.vala:73
 msgid "Back"
 msgstr "Terug"
 
-#: src/MainWindow.vala:69
+#: src/MainWindow.vala:74
 msgid "Delete file"
 msgstr "Verwijderen"
 
-#: src/MainWindow.vala:70
+#: src/MainWindow.vala:75
 msgid "Rename file"
 msgstr "Naam wijzigen"
 
-#: src/MainWindow.vala:71
+#: src/MainWindow.vala:76
+msgid "Search"
+msgstr "Zoeken"
+
+#: src/MainWindow.vala:77
 msgid "Play"
 msgstr "Beluisteren"
 
-#: src/MainWindow.vala:72
+#: src/MainWindow.vala:78
 msgid "Stop"
 msgstr "Stoppen"
 
-#: src/MainWindow.vala:73
+#: src/MainWindow.vala:79
 msgid "Start recording"
 msgstr "Opname starten"
 
-#: src/MainWindow.vala:74
+#: src/MainWindow.vala:80
 msgid "Stop recording"
 msgstr "Opname stoppen"
 
-#: src/MainWindow.vala:75
+#: src/MainWindow.vala:123
 msgid "Open the Records folder"
 msgstr "Opnamemap openen"
 
-#: src/MainWindow.vala:126
+#: src/MainWindow.vala:124
+msgid "About Recorder"
+msgstr "Over Recorder"
+
+#: src/MainWindow.vala:125
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: src/MainWindow.vala:171
 msgid "Welcome!"
 msgstr "Welkom!"
 
-#: src/MainWindow.vala:141
+#: src/MainWindow.vala:187
 msgid "Name"
 msgstr "Naam"
 
-#: src/MainWindow.vala:151
+#: src/MainWindow.vala:197
 msgid "OK"
 msgstr "Oké"
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:232
 msgid "Please choose a file"
 msgstr "Kies een bestand"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:237
 msgid "Now playing: "
 msgstr "U luistert naar "
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:244
 msgid "Playback stopped"
 msgstr "Het afspelen is gestopt"
 
-#: src/MainWindow.vala:211
+#: src/MainWindow.vala:257
 msgid "Recording is in progress"
 msgstr "Er wordt een opname gemaakt"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:259
 msgid ""
 "Error!\n"
 "Failed to start recording"
@@ -85,42 +97,43 @@ msgstr ""
 "Foutmelding!\n"
 "Er kan geen opname worden gemaakt"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:270
 msgid "Recording stopped"
 msgstr "De opname is gestopt"
 
-#: src/MainWindow.vala:246 src/MainWindow.vala:288
+#: src/MainWindow.vala:292 src/MainWindow.vala:334
 msgid "Choose a file"
 msgstr "Kies een bestand"
 
-#: src/MainWindow.vala:256
+#: src/MainWindow.vala:302
 msgid "Enter the name"
 msgstr "Voer een naam in"
 
-#: src/MainWindow.vala:265
+#: src/MainWindow.vala:311
 msgid "Rename failed"
 msgstr "De naam kan niet worden gewijzigd"
 
-#: src/MainWindow.vala:270
+#: src/MainWindow.vala:316
 msgid "A file with the same name already exists"
 msgstr "Er is al een bestand met deze naam"
 
-#: src/MainWindow.vala:292
-msgid "Delete file "
-msgstr "Verwijderen "
+#: src/MainWindow.vala:338
+#, c-format
+msgid "Delete file %s?"
+msgstr "Wilt u %s verwijderen?"
 
-#: src/MainWindow.vala:293
+#: src/MainWindow.vala:339
 msgid "_Cancel"
 msgstr "_Annuleren"
 
-#: src/MainWindow.vala:294 src/MainWindow.vala:389
+#: src/MainWindow.vala:340 src/MainWindow.vala:460
 msgid "_OK"
 msgstr "_Oké"
 
-#: src/MainWindow.vala:303
+#: src/MainWindow.vala:349
 msgid "Delete failed"
 msgstr "Het verwijderen is mislukt"
 
-#: src/MainWindow.vala:439
+#: src/MainWindow.vala:441
 msgid "translator-credits"
 msgstr "Heimen Stoffels <vistausss@fastmail.com>"
