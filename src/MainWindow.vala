@@ -98,6 +98,7 @@ Gst.Bus player_bus;
         play_button.clicked.connect(on_play_clicked);
         stop_button.clicked.connect(on_stop_clicked);
         var headerbar = new Adw.HeaderBar();
+        headerbar.add_css_class("flat");
         headerbar.pack_start(back_button);
         headerbar.pack_start(delete_button);
         headerbar.pack_start(edit_button);
@@ -433,7 +434,7 @@ private void on_stop_record_clicked(){
 	        var win = new Adw.AboutWindow () {
                 application_name = "Recorder",
                 application_icon = "com.github.alexkdeveloper.recorder",
-                version = "1.0.12",
+                version = "1.0.13",
                 copyright = "Copyright © 2022-2023 Alex Kryuchkov",
                 license_type = License.GPL_3_0,
                 developer_name = "Alex Kryuchkov",
