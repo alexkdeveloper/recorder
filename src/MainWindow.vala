@@ -375,8 +375,8 @@ private void on_stop_record_clicked(){
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 5);
         vbox.append (label_time);
         vbox.append (entry_time);
-        var ok_button = new Gtk.Button.with_label (_("Start timer"));
-        ok_button.clicked.connect(on_start_timer);
+        var start_timer_button = new Gtk.Button.with_label (_("Start timer"));
+        start_timer_button.clicked.connect(on_start_timer);
         var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.clicked.connect(()=>{
            window_timer.close();
@@ -384,7 +384,7 @@ private void on_stop_record_clicked(){
 		var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 5);
         hbox.set_halign (Gtk.Align.END);
         hbox.append (close_button);
-        hbox.append (ok_button);
+        hbox.append (start_timer_button);
 
         var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 10);
         box.vexpand = true;
@@ -429,6 +429,8 @@ private void on_stop_record_clicked(){
             on_stop_record_clicked();
             return false;
         });
+
+        set_toast(_("The timer is running"));
 
         window_timer.close();
     }
