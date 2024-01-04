@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-01-04 18:57+0800\n"
-"PO-Revision-Date: 2024-01-04 18:59+0800\n"
+"POT-Creation-Date: 2024-01-04 22:10+0800\n"
+"PO-Revision-Date: 2024-01-04 22:12+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -128,7 +128,7 @@ msgstr "Удалить файл %s?"
 msgid "_Cancel"
 msgstr "_Отмена"
 
-#: MainWindow.vala:349 MainWindow.vala:547
+#: MainWindow.vala:349 MainWindow.vala:552
 msgid "_OK"
 msgstr ""
 
@@ -156,11 +156,16 @@ msgstr "Запись не запущена!"
 msgid "Enter time in minutes"
 msgstr "Введите время в минутах"
 
-#: MainWindow.vala:433
+#: MainWindow.vala:427
+msgid ""
+"The timer has already been started earlier and has not yet completed its work"
+msgstr "Таймер уже был запущен ранее и еще не завершил свою работу"
+
+#: MainWindow.vala:438
 msgid "The timer is running"
 msgstr "Таймер запущен"
 
-#: MainWindow.vala:528
+#: MainWindow.vala:533
 msgid "translator-credits"
 msgstr "Alex Kryuchkov https://github.com/alexkdeveloper"
 

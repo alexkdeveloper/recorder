@@ -418,8 +418,13 @@ private void on_stop_record_clicked(){
         }
 
         if(is_empty(entry_time.get_text())){
-            alert(_("Enter time in minutes"), "");
+            set_toast(_("Enter time in minutes"));
             entry_time.grab_focus();
+            return;
+        }
+
+        if(timeout_id != 0){
+            alert(_("The timer has already been started earlier and has not yet completed its work"), "");
             return;
         }
 
