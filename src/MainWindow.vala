@@ -22,11 +22,14 @@ private Button stop_button;
 private Button record_button;
 private Button stop_record_button;
 private Label current_action;
+private Entry entry_time;
 private MP3Recorder mp3_recorder;
 private Bus bus;
 private Adw.ToastOverlay overlay;
+private Adw.Window window_timer;
 private string directory_path;
 private string item;
+private uint timeout_id = 0;
 Gst.Bus player_bus;
 
         public MainWindow(Adw.Application application) {
@@ -108,6 +111,8 @@ Gst.Bus player_bus;
         headerbar.pack_end(play_button);
         headerbar.pack_end(record_button);
         headerbar.pack_end(stop_record_button);
+        var timer_action = new GLib.SimpleAction ("timer", null);
+        timer_action.activate.connect (on_timer_dialog);
         var open_directory_action = new GLib.SimpleAction ("open", null);
         open_directory_action.activate.connect (on_open_directory_clicked);
         var about_action = new GLib.SimpleAction ("about", null);
@@ -117,13 +122,16 @@ Gst.Bus player_bus;
         quit_action.activate.connect(()=>{
                app.quit();
             });
+        app.add_action(timer_action);
         app.add_action(open_directory_action);
         app.add_action(about_action);
         app.add_action(quit_action);
         var menu = new GLib.Menu();
+        var item_timer = new GLib.MenuItem (_("Timer"), "app.timer");
         var item_open = new GLib.MenuItem (_("Open the Records folder"), "app.open");
         var item_about = new GLib.MenuItem (_("About Recorder"), "app.about");
         var item_quit = new GLib.MenuItem (_("Quit"), "app.quit");
+        menu.append_item (item_timer);
         menu.append_item (item_open);
         menu.append_item (item_about);
         menu.append_item (item_quit);
@@ -271,7 +279,7 @@ private void on_stop_record_clicked(){
    current_action.set_text(_("Recording stopped"));
    set_widget_visible(record_button,true);
    set_widget_visible(stop_record_button,false);
-
+   remove_timeout();
 }
    private void on_open_directory_clicked(){
       Gtk.show_uri(this, "file://"+directory_path, Gdk.CURRENT_TIME);
@@ -356,6 +364,75 @@ private void on_stop_record_clicked(){
             });
          }
 
+   private void on_timer_dialog(){
+        window_timer = new Adw.Window();
+        window_timer.set_title (_("Timer"));
+        window_timer.set_transient_for (this);
+        window_timer.set_modal (true);
+        entry_time = new Gtk.Entry();
+        var label_time = new Gtk.Label.with_mnemonic (_("_End of recording in (minutes):"));
+        label_time.set_halign (Gtk.Align.START);
+        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 5);
+        vbox.append (label_time);
+        vbox.append (entry_time);
+        var ok_button = new Gtk.Button.with_label (_("Start timer"));
+        ok_button.clicked.connect(on_start_timer);
+        var close_button = new Gtk.Button.with_label (_("Close"));
+        close_button.clicked.connect(()=>{
+           window_timer.close();
+        });
+		var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 5);
+        hbox.set_halign (Gtk.Align.END);
+        hbox.append (close_button);
+        hbox.append (ok_button);
+
+        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 10);
+        box.vexpand = true;
+        box.append (vbox);
+        box.append (hbox);
+
+        var clamp = new Adw.Clamp ();
+        clamp.valign = Gtk.Align.CENTER;
+        clamp.tightening_threshold = 100;
+        clamp.margin_top = 10;
+        clamp.margin_bottom = 20;
+        clamp.margin_start = 20;
+        clamp.margin_end = 20;
+        clamp.set_child (box);
+
+        var headerbar = new Adw.HeaderBar();
+        headerbar.add_css_class("flat");
+
+        var main_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        main_box.append (headerbar);
+        main_box.append (clamp);
+
+        window_timer.set_content (main_box);
+        window_timer.show();
+    }
+
+   private void on_start_timer(){
+        if(!mp3_recorder.is_recording){
+            set_toast(_("Recording not started!"));
+            return;
+        }
+
+        if(is_empty(entry_time.get_text())){
+            alert(_("Enter time in minutes"), "");
+            entry_time.grab_focus();
+            return;
+        }
+
+        int time = int.parse(entry_time.get_text())*60;
+
+        timeout_id = Timeout.add_seconds(time, () => {
+            on_stop_record_clicked();
+            return false;
+        });
+
+        window_timer.close();
+    }
+
    private void show_files () {
         var list = new GLib.List<string> ();
             try {
@@ -430,12 +507,19 @@ private void on_stop_record_clicked(){
         return str.strip().length == 0;
       }
 
+   private void remove_timeout () {
+        if (timeout_id != 0) {
+            GLib.Source.remove (timeout_id);
+            timeout_id = 0;
+        }
+    }
+
      private void about () {
 	        var win = new Adw.AboutWindow () {
                 application_name = "Recorder",
                 application_icon = "com.github.alexkdeveloper.recorder",
-                version = "1.0.13",
-                copyright = "Copyright © 2022-2023 Alex Kryuchkov",
+                version = "1.0.14",
+                copyright = "Copyright © 2022-2024 Alex Kryuchkov",
                 license_type = License.GPL_3_0,
                 developer_name = "Alex Kryuchkov",
                 developers = {"Alex Kryuchkov https://github.com/alexkdeveloper"},
