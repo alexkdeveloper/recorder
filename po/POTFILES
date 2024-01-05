@@ -1,1 +1,3 @@
+data/com.github.alexkdeveloper.recorder.appdata.xml.in
+data/com.github.alexkdeveloper.recorder.desktop.in
 src/MainWindow.vala
