@@ -2,101 +2,130 @@
 # Copyright (C) 2022-2023 com.github.alexkdeveloper.recorder's COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.alexkdeveloper.recorder package.
 #
-# Sabri Ünal <libreajans@gmail.com>, 2022, 2023.
+# Sabri Ünal <libreajans@gmail.com>, 2022, 2023, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.alexkdeveloper.recorder master\n"
-"POT-Creation-Date: 2023-01-25 17:31+0300\n"
-"PO-Revision-Date: 2023-01-25 17:31+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-05 13:55+0300\n"
+"PO-Revision-Date: 2024-01-05 13:56+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
-"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: src\n"
 
-#: src/MP3Recorder.vala:147
-msgid "Recording is ongoing"
-msgstr "Kayıt sürüyor"
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:7
+#: data/com.github.alexkdeveloper.recorder.desktop.in:4
+msgid "Recorder"
+msgstr "Kaydedici"
 
-#: src/MainWindow.vala:73
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:8
+#: data/com.github.alexkdeveloper.recorder.desktop.in:5
+msgid "Simple audio recorder"
+msgstr "Basit ses kaydedici"
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr "Alex Kryuchkov"
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:26
+msgid ""
+"A program for recording audio in mp3 format. Just turn on your favorite "
+"track in some Internet service and run this program. The program also "
+"provides the ability to listen to recordings."
+msgstr ""
+"Mp3 biçiminde ses kaydetmek için program. Sadece bazı internet "
+"servislerindeki gözde parçanızı açın ve bu programı çalıştırın. Program "
+"ayrıca kayıtları dinleme imkanı da sunuyor."
+
+#: data/com.github.alexkdeveloper.recorder.desktop.in:10
+msgid "Recorder;Audio;Music;Player;"
+msgstr "Kaydedici;Ses;Müzik;Oynatıcı;"
+
+#: src/MainWindow.vala:76
 msgid "Back"
 msgstr "Geri"
 
-#: src/MainWindow.vala:74
+#: src/MainWindow.vala:77
 msgid "Delete file"
 msgstr "Dosyayı sil"
 
-#: src/MainWindow.vala:75
+#: src/MainWindow.vala:78
 msgid "Rename file"
 msgstr "Dosyayı yeniden adlandır"
 
-#: src/MainWindow.vala:76
+#: src/MainWindow.vala:79
 msgid "Search"
 msgstr "Ara"
 
-#: src/MainWindow.vala:77
+#: src/MainWindow.vala:80
 msgid "Play"
 msgstr "Oynat"
 
-#: src/MainWindow.vala:78
+#: src/MainWindow.vala:81
 msgid "Stop"
 msgstr "Durdur"
 
-#: src/MainWindow.vala:79
+#: src/MainWindow.vala:82
 msgid "Start recording"
 msgstr "Kaydı başlat"
 
-#: src/MainWindow.vala:80
+#: src/MainWindow.vala:83
 msgid "Stop recording"
 msgstr "Kaydı durdur"
 
-#: src/MainWindow.vala:123
+#: src/MainWindow.vala:130 src/MainWindow.vala:369
+msgid "Timer"
+msgstr "Zamanlayıcı"
+
+#: src/MainWindow.vala:131
 msgid "Open the Records folder"
 msgstr "Kayıtlar klasörünü aç"
 
-#: src/MainWindow.vala:124
+#: src/MainWindow.vala:132
 msgid "About Recorder"
 msgstr "Ses Kaydedici Hakkında"
 
-#: src/MainWindow.vala:125
+#: src/MainWindow.vala:133
 msgid "Quit"
 msgstr "Çık"
 
-#: src/MainWindow.vala:171
+#: src/MainWindow.vala:180
 msgid "Welcome!"
 msgstr "Hoş Geldiniz!"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:196
 msgid "Name"
 msgstr "Ad"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:206
 msgid "OK"
 msgstr "Tamam"
 
-#: src/MainWindow.vala:232
+#: src/MainWindow.vala:241
 msgid "Please choose a file"
 msgstr "Dosya adı seçiniz"
 
-#: src/MainWindow.vala:237
+#: src/MainWindow.vala:246
 msgid "Now playing: "
 msgstr "Oynatılıyor: "
 
-#: src/MainWindow.vala:244
+#: src/MainWindow.vala:253
 msgid "Playback stopped"
 msgstr "Oynatma durduruldu"
 
-#: src/MainWindow.vala:257
+#: src/MainWindow.vala:266
 msgid "Recording is in progress"
 msgstr "Kayıt sürüyor"
 
-#: src/MainWindow.vala:259
+#: src/MainWindow.vala:268
 msgid ""
 "Error!\n"
 "Failed to start recording"
@@ -104,42 +133,75 @@ msgstr ""
 "Hata!\n"
 "Kayıt başlatılamadı"
 
-#: src/MainWindow.vala:270
+#: src/MainWindow.vala:279
 msgid "Recording stopped"
 msgstr "Kayıt durduruldu"
 
-#: src/MainWindow.vala:292 src/MainWindow.vala:334
+#: src/MainWindow.vala:301 src/MainWindow.vala:343
 msgid "Choose a file"
 msgstr "Dosya seçiniz"
 
-#: src/MainWindow.vala:302
+#: src/MainWindow.vala:311
 msgid "Enter the name"
 msgstr "Adı giriniz"
 
-#: src/MainWindow.vala:311
+#: src/MainWindow.vala:320
 msgid "Rename failed"
 msgstr "Yeniden adlandırılamadı"
 
-#: src/MainWindow.vala:316
+#: src/MainWindow.vala:325
 msgid "A file with the same name already exists"
 msgstr "Aynı adla bir dosya zaten var"
 
-#: src/MainWindow.vala:338
+#: src/MainWindow.vala:347
+#, c-format
 msgid "Delete file %s?"
 msgstr "%s dosyası silinsin mi?"
 
-#: src/MainWindow.vala:339
+#: src/MainWindow.vala:348
 msgid "_Cancel"
-msgstr "_İptal"
+msgstr "İ_ptal"
 
-#: src/MainWindow.vala:340 src/MainWindow.vala:460
+#: src/MainWindow.vala:349 src/MainWindow.vala:552
 msgid "_OK"
 msgstr "_Tamam"
 
-#: src/MainWindow.vala:349
+#: src/MainWindow.vala:358
 msgid "Delete failed"
 msgstr "Silinemedi"
 
-#: src/MainWindow.vala:441
+#: src/MainWindow.vala:373
+msgid "_End of recording in (minutes):"
+msgstr "_Kayıt sonu (dakika):"
+
+#: src/MainWindow.vala:378
+msgid "Start timer"
+msgstr "Zamanlayıcıyı başlat"
+
+#: src/MainWindow.vala:380
+msgid "Close"
+msgstr "Kapat"
+
+#: src/MainWindow.vala:416
+msgid "Recording not started!"
+msgstr "Kayıt başlatılmadı!"
+
+#: src/MainWindow.vala:421
+msgid "Enter time in minutes"
+msgstr "Süreyi dakika olarak girin"
+
+#: src/MainWindow.vala:427
+msgid ""
+"The timer has already been started earlier and has not yet completed its work"
+msgstr "Zamanlayıcı zaten başlatılmış ve henüz çalışmasını tamamlamamış"
+
+#: src/MainWindow.vala:438
+msgid "The timer is running"
+msgstr "Zamanlayıcı çalışıyor"
+
+#: src/MainWindow.vala:533
 msgid "translator-credits"
 msgstr "Sabri Ünal <libreajans@gmail.com>"
+
+#~ msgid "Recording is ongoing"
+#~ msgstr "Kayıt sürüyor"
