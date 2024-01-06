@@ -346,10 +346,10 @@ private void on_stop_record_clicked(){
            GLib.File file = GLib.File.new_for_path(directory_path+"/"+item);
         var delete_file_dialog = new Adw.MessageDialog(this, _("Delete file %s?").printf(file.get_basename()), "");
             delete_file_dialog.add_response("cancel", _("_Cancel"));
-            delete_file_dialog.add_response("ok", _("_OK"));
+            delete_file_dialog.add_response("ok", _("_Delete"));
             delete_file_dialog.set_default_response("ok");
             delete_file_dialog.set_close_response("cancel");
-            delete_file_dialog.set_response_appearance("ok", SUGGESTED);
+            delete_file_dialog.set_response_appearance("ok", DESTRUCTIVE);
             delete_file_dialog.show();
             delete_file_dialog.response.connect((response) => {
                 if (response == "ok") {
@@ -424,7 +424,19 @@ private void on_stop_record_clicked(){
         }
 
         if(timeout_id != 0){
-            alert(_("The timer has already been started earlier and has not yet completed its work"), "");
+            var cancel_timer_dialog = new Adw.MessageDialog(this, _("The timer has already been started earlier and has not yet completed its work"), "");
+            cancel_timer_dialog.add_response("cancel", _("_Close"));
+            cancel_timer_dialog.add_response("ok", _("_Cancel the timer"));
+            cancel_timer_dialog.set_default_response("ok");
+            cancel_timer_dialog.set_close_response("cancel");
+            cancel_timer_dialog.set_response_appearance("ok", SUGGESTED);
+            cancel_timer_dialog.show();
+            cancel_timer_dialog.response.connect((response) => {
+                if (response == "ok") {
+                   remove_timeout();
+                }
+                cancel_timer_dialog.close();
+            });
             return;
         }
 
@@ -525,7 +537,7 @@ private void on_stop_record_clicked(){
 	        var win = new Adw.AboutWindow () {
                 application_name = "Recorder",
                 application_icon = "com.github.alexkdeveloper.recorder",
-                version = "1.0.14",
+                version = "1.0.15",
                 copyright = "Copyright © 2022-2024 Alex Kryuchkov",
                 license_type = License.GPL_3_0,
                 developer_name = "Alex Kryuchkov",
