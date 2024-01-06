@@ -22,6 +22,31 @@ msgstr ""
 "in\n"
 "X-Poedit-SearchPath-2: data/com.github.alexkdeveloper.recorder.desktop.in\n"
 
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:7
+#: data/com.github.alexkdeveloper.recorder.desktop.in:4
+msgid "Recorder"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:8
+#: data/com.github.alexkdeveloper.recorder.desktop.in:5
+msgid "Simple audio recorder"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:26
+msgid ""
+"A program for recording audio in mp3 format. Just turn on your favorite "
+"track in some Internet service and run this program. The program also "
+"provides the ability to listen to recordings."
+msgstr ""
+
+#: data/com.github.alexkdeveloper.recorder.desktop.in:10
+msgid "Recorder;Audio;Music;Player;"
+msgstr ""
+
 #: src/MainWindow.vala:76
 msgid "Back"
 msgstr ""
