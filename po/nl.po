@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.alexkdeveloper.recorder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-22 11:33+0100\n"
-"PO-Revision-Date: 2023-03-22 11:34+0100\n"
+"POT-Creation-Date: 2024-01-06 12:52+0800\n"
+"PO-Revision-Date: 2024-01-07 11:58+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl\n"
@@ -15,81 +15,113 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#: src/MainWindow.vala:73
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:7
+#: data/com.github.alexkdeveloper.recorder.desktop.in:4
+msgid "Recorder"
+msgstr "Over Recorder"
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:8
+#: data/com.github.alexkdeveloper.recorder.desktop.in:5
+msgid "Simple audio recorder"
+msgstr "Eenvoudige audio-opname"
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr "Alex Kryuchkov"
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:26
+msgid ""
+"A program for recording audio in mp3 format. Just turn on your favorite "
+"track in some Internet service and run this program. The program also "
+"provides the ability to listen to recordings."
+msgstr ""
+"Een toepassing voor het opnemen van audio in mp3-formaat. Zet uw favoriete "
+"nummer op en start de toepassing. Nadien kunt u uw opnamen beluisteren "
+"vanuit deze toepassing."
+
+#: data/com.github.alexkdeveloper.recorder.desktop.in:10
+msgid "Recorder;Audio;Music;Player;"
+msgstr "Recorder;Opname;Audio;Muziek;Speler;"
+
+#: src/MainWindow.vala:76
 msgid "Back"
 msgstr "Terug"
 
-#: src/MainWindow.vala:74
+#: src/MainWindow.vala:77
 msgid "Delete file"
 msgstr "Verwijderen"
 
-#: src/MainWindow.vala:75
+#: src/MainWindow.vala:78
 msgid "Rename file"
 msgstr "Naam wijzigen"
 
-#: src/MainWindow.vala:76
+#: src/MainWindow.vala:79
 msgid "Search"
 msgstr "Zoeken"
 
-#: src/MainWindow.vala:77
+#: src/MainWindow.vala:80
 msgid "Play"
 msgstr "Beluisteren"
 
-#: src/MainWindow.vala:78
+#: src/MainWindow.vala:81
 msgid "Stop"
 msgstr "Stoppen"
 
-#: src/MainWindow.vala:79
+#: src/MainWindow.vala:82
 msgid "Start recording"
 msgstr "Opname starten"
 
-#: src/MainWindow.vala:80
+#: src/MainWindow.vala:83
 msgid "Stop recording"
 msgstr "Opname stoppen"
 
-#: src/MainWindow.vala:123
+#: src/MainWindow.vala:130 src/MainWindow.vala:369
+msgid "Timer"
+msgstr "Tijdklok"
+
+#: src/MainWindow.vala:131
 msgid "Open the Records folder"
 msgstr "Opnamemap openen"
 
-#: src/MainWindow.vala:124
+#: src/MainWindow.vala:132
 msgid "About Recorder"
 msgstr "Over Recorder"
 
-#: src/MainWindow.vala:125
+#: src/MainWindow.vala:133
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: src/MainWindow.vala:171
+#: src/MainWindow.vala:180
 msgid "Welcome!"
 msgstr "Welkom!"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:196
 msgid "Name"
 msgstr "Naam"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:206
 msgid "OK"
 msgstr "Oké"
 
-#: src/MainWindow.vala:232
+#: src/MainWindow.vala:241
 msgid "Please choose a file"
 msgstr "Kies een bestand"
 
-#: src/MainWindow.vala:237
+#: src/MainWindow.vala:246
 msgid "Now playing: "
 msgstr "U luistert naar "
 
-#: src/MainWindow.vala:244
+#: src/MainWindow.vala:253
 msgid "Playback stopped"
 msgstr "Het afspelen is gestopt"
 
-#: src/MainWindow.vala:257
+#: src/MainWindow.vala:266
 msgid "Recording is in progress"
 msgstr "Er wordt een opname gemaakt"
 
-#: src/MainWindow.vala:259
+#: src/MainWindow.vala:268
 msgid ""
 "Error!\n"
 "Failed to start recording"
@@ -97,43 +129,84 @@ msgstr ""
 "Foutmelding!\n"
 "Er kan geen opname worden gemaakt"
 
-#: src/MainWindow.vala:270
+#: src/MainWindow.vala:279
 msgid "Recording stopped"
 msgstr "De opname is gestopt"
 
-#: src/MainWindow.vala:292 src/MainWindow.vala:334
+#: src/MainWindow.vala:301 src/MainWindow.vala:343
 msgid "Choose a file"
 msgstr "Kies een bestand"
 
-#: src/MainWindow.vala:302
+#: src/MainWindow.vala:311
 msgid "Enter the name"
 msgstr "Voer een naam in"
 
-#: src/MainWindow.vala:311
+#: src/MainWindow.vala:320
 msgid "Rename failed"
 msgstr "De naam kan niet worden gewijzigd"
 
-#: src/MainWindow.vala:316
+#: src/MainWindow.vala:325
 msgid "A file with the same name already exists"
 msgstr "Er is al een bestand met deze naam"
 
-#: src/MainWindow.vala:338
+#: src/MainWindow.vala:347
 #, c-format
 msgid "Delete file %s?"
 msgstr "Wilt u %s verwijderen?"
 
-#: src/MainWindow.vala:339
+#: src/MainWindow.vala:348
 msgid "_Cancel"
 msgstr "_Annuleren"
 
-#: src/MainWindow.vala:340 src/MainWindow.vala:460
-msgid "_OK"
-msgstr "_Oké"
-
 #: src/MainWindow.vala:349
+msgid "_Delete"
+msgstr "Verwij_deren"
+
+#: src/MainWindow.vala:358
 msgid "Delete failed"
 msgstr "Het verwijderen is mislukt"
 
-#: src/MainWindow.vala:441
+#: src/MainWindow.vala:373
+msgid "_End of recording in (minutes):"
+msgstr "_Einde van opname (in minuten):"
+
+#: src/MainWindow.vala:378
+msgid "Start timer"
+msgstr "Tijdklok starten"
+
+#: src/MainWindow.vala:380
+msgid "Close"
+msgstr "Sluiten"
+
+#: src/MainWindow.vala:416
+msgid "Recording not started!"
+msgstr "De opname is nog niet gestart!"
+
+#: src/MainWindow.vala:421
+msgid "Enter time in minutes"
+msgstr "Voer een tijd in (in minuten)"
+
+#: src/MainWindow.vala:427
+msgid ""
+"The timer has already been started earlier and has not yet completed its work"
+msgstr "De tijdklok is gestart, maar nog niet verstreken"
+
+#: src/MainWindow.vala:428
+msgid "_Close"
+msgstr "_Sluiten"
+
+#: src/MainWindow.vala:429
+msgid "_Cancel the timer"
+msgstr "Tijd_klok stoppen"
+
+#: src/MainWindow.vala:450
+msgid "The timer is running"
+msgstr "De tijdklok is actief"
+
+#: src/MainWindow.vala:545
 msgid "translator-credits"
 msgstr "Heimen Stoffels <vistausss@fastmail.com>"
+
+#: src/MainWindow.vala:564
+msgid "_OK"
+msgstr "_Oké"
