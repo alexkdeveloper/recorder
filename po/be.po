@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-06 12:52+0800\n"
+"PO-Revision-Date: 2024-01-07 10:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: src/MainWindow.vala\n"
+"X-Poedit-SearchPath-1: data/com.github.alexkdeveloper.recorder.appdata.xml."
+"in\n"
+"X-Poedit-SearchPath-2: data/com.github.alexkdeveloper.recorder.desktop.in\n"
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:7
+#: data/com.github.alexkdeveloper.recorder.desktop.in:4
+msgid "Recorder"
+msgstr "Recorder"
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:8
+#: data/com.github.alexkdeveloper.recorder.desktop.in:5
+msgid "Simple audio recorder"
+msgstr "Простая праграма для запісу гуку"
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr "Alex Kryuchkov"
+
+#: data/com.github.alexkdeveloper.recorder.appdata.xml.in:26
+msgid ""
+"A program for recording audio in mp3 format. Just turn on your favorite "
+"track in some Internet service and run this program. The program also "
+"provides the ability to listen to recordings."
+msgstr ""
+"Праграму для запісу гуку ў фармаце mp3. Проста уключыце любімы трэк у якім-"
+"небудзь інтэрнэт-сэрвісе і запусціце гэтую праграму. Праграма таксама дае "
+"магчымасць праслухоўвання запісаў."
+
+#: data/com.github.alexkdeveloper.recorder.desktop.in:10
+msgid "Recorder;Audio;Music;Player;"
+msgstr "Recorder;Audio;Music;Player;Дыктафон; Аўдыё; Музыка; Прайгравальнік;"
+
+#: src/MainWindow.vala:76
+msgid "Back"
+msgstr "Назад"
+
+#: src/MainWindow.vala:77
+msgid "Delete file"
+msgstr "Выдаліць файл"
+
+#: src/MainWindow.vala:78
+msgid "Rename file"
+msgstr "Перайменаваць файл"
+
+#: src/MainWindow.vala:79
+msgid "Search"
+msgstr "Пошук"
+
+#: src/MainWindow.vala:80
+msgid "Play"
+msgstr "Прайграць"
+
+#: src/MainWindow.vala:81
+msgid "Stop"
+msgstr "Спыніць"
+
+#: src/MainWindow.vala:82
+msgid "Start recording"
+msgstr "Пачаць запіс"
+
+#: src/MainWindow.vala:83
+msgid "Stop recording"
+msgstr "Спыніць запіс"
+
+#: src/MainWindow.vala:130 src/MainWindow.vala:369
+msgid "Timer"
+msgstr "Таймер"
+
+#: src/MainWindow.vala:131
+msgid "Open the Records folder"
+msgstr "Адкрыць папку з запісамі"
+
+#: src/MainWindow.vala:132
+msgid "About Recorder"
+msgstr "Аб праграме"
+
+#: src/MainWindow.vala:133
+msgid "Quit"
+msgstr "Выйсці"
+
+#: src/MainWindow.vala:180
+msgid "Welcome!"
+msgstr "Вітаем!"
+
+#: src/MainWindow.vala:196
+msgid "Name"
+msgstr "Назва"
+
+#: src/MainWindow.vala:206
+msgid "OK"
+msgstr "ОК"
+
+#: src/MainWindow.vala:241
+msgid "Please choose a file"
+msgstr "Выберыце файл"
+
+#: src/MainWindow.vala:246
+msgid "Now playing: "
+msgstr "Зараз прайграваецца: "
+
+#: src/MainWindow.vala:253
+msgid "Playback stopped"
+msgstr "Прайграванне спынена"
+
+#: src/MainWindow.vala:266
+msgid "Recording is in progress"
+msgstr "Ідзе запіс"
+
+#: src/MainWindow.vala:268
+msgid ""
+"Error!\n"
+"Failed to start recording"
+msgstr ""
+"Памылка!\n"
+"Не ўдалося пачаць запіс"
+
+#: src/MainWindow.vala:279
+msgid "Recording stopped"
+msgstr "Запіс спынены"
+
+#: src/MainWindow.vala:301 src/MainWindow.vala:343
+msgid "Choose a file"
+msgstr "Выберыце файл"
+
+#: src/MainWindow.vala:311
+msgid "Enter the name"
+msgstr "Увядзіце назву"
+
+#: src/MainWindow.vala:320
+msgid "Rename failed"
+msgstr "Не ўдалося перайменаваць"
+
+#: src/MainWindow.vala:325
+msgid "A file with the same name already exists"
+msgstr "Файл з такой назвай ужо існуе"
+
+#: src/MainWindow.vala:347
+#, c-format
+msgid "Delete file %s?"
+msgstr "Выдаліць файл %s?"
+
+#: src/MainWindow.vala:348
+msgid "_Cancel"
+msgstr "_Скасаваць"
+
+#: src/MainWindow.vala:349
+msgid "_Delete"
+msgstr "_Выдаліць"
+
+#: src/MainWindow.vala:358
+msgid "Delete failed"
+msgstr "Не ўдалося выдаліць"
+
+#: src/MainWindow.vala:373
+msgid "_End of recording in (minutes):"
+msgstr "_Канец запісу праз (хвілін):"
+
+#: src/MainWindow.vala:378
+msgid "Start timer"
+msgstr "Запусціць таймер"
+
+#: src/MainWindow.vala:380
+msgid "Close"
+msgstr "Закрыць"
+
+#: src/MainWindow.vala:416
+msgid "Recording not started!"
+msgstr "Запіс не пачаўся!"
+
+#: src/MainWindow.vala:421
+msgid "Enter time in minutes"
+msgstr "Увядзіце час у хвілінах"
+
+#: src/MainWindow.vala:427
+msgid ""
+"The timer has already been started earlier and has not yet completed its work"
+msgstr "Таймер ужо быў запушчаны раней і яшчэ не завяршыў сваю працу"
+
+#: src/MainWindow.vala:428
+msgid "_Close"
+msgstr "_Закрыць"
+
+#: src/MainWindow.vala:429
+msgid "_Cancel the timer"
+msgstr "_Скінуць таймер"
+
+#: src/MainWindow.vala:450
+msgid "The timer is running"
+msgstr "Таймер працуе"
+
+#: src/MainWindow.vala:545
+msgid "translator-credits"
+msgstr "Yahor Haurylenka <k1llo2810@gmail.com> 2024"
+
+#: src/MainWindow.vala:564
+msgid "_OK"
+msgstr "_ОК"
