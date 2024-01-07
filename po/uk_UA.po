@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Recorder\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 12:52+0800\n"
-"PO-Revision-Date: 2024-01-07 15:52+0200\n"
+"PO-Revision-Date: 2024-01-07 16:51+0200\n"
 "Last-Translator: volkov <volkovissocool@gmail.com>\n"
 "Language-Team: volkov <volkovissocool@gmail.com>\n"
 "Language: uk_UA\n"
@@ -27,7 +27,7 @@ msgstr ""
 #: data/com.github.alexkdeveloper.recorder.appdata.xml.in:7
 #: data/com.github.alexkdeveloper.recorder.desktop.in:4
 msgid "Recorder"
-msgstr "Диктофон"
+msgstr "Записувач"
 
 #: data/com.github.alexkdeveloper.recorder.appdata.xml.in:8
 #: data/com.github.alexkdeveloper.recorder.desktop.in:5
@@ -96,7 +96,7 @@ msgstr "Відкрити у теці з записами"
 
 #: src/MainWindow.vala:132
 msgid "About Recorder"
-msgstr "Про Диктофон"
+msgstr "Про Записувач"
 
 #: src/MainWindow.vala:133
 msgid "Quit"
