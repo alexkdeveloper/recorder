@@ -353,8 +353,12 @@ private void on_stop_record_clicked(){
             delete_file_dialog.show();
             delete_file_dialog.response.connect((response) => {
                 if (response == "ok") {
-                    FileUtils.remove (directory_path+"/"+item);
-                    if(file.query_exists()){
+                     try{
+		                file.trash();
+	                }catch(Error e){
+		                print(e.message);
+	                }
+                    if (file.query_exists()){
                        set_toast(_("Delete failed"));
                     }else{
                        show_files();
@@ -537,7 +541,7 @@ private void on_stop_record_clicked(){
 	        var win = new Adw.AboutWindow () {
                 application_name = "Recorder",
                 application_icon = "com.github.alexkdeveloper.recorder",
-                version = "1.0.17",
+                version = "1.0.18",
                 copyright = "Copyright © 2022-2024 Alex Kryuchkov",
                 license_type = License.GPL_3_0,
                 developer_name = "Alex Kryuchkov",
