@@ -354,9 +354,9 @@ private void on_stop_record_clicked(){
             delete_file_dialog.response.connect((response) => {
                 if (response == "ok") {
                      try{
-		                file.trash();
+		         file.trash();
 	                }catch(Error e){
-		                print(e.message);
+		         print(e.message);
 	                }
                     if (file.query_exists()){
                        set_toast(_("Delete failed"));
