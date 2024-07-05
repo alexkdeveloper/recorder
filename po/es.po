@@ -30,7 +30,7 @@ msgstr "Recorder"
 #: data/com.github.alexkdeveloper.recorder.appdata.xml.in:8
 #: data/com.github.alexkdeveloper.recorder.desktop.in:5
 msgid "Simple audio recorder"
-msgstr "Simple audio recorder"
+msgstr "Grabadora de audio sencilla"
 
 #: data/com.github.alexkdeveloper.recorder.appdata.xml.in:14
 msgid "Alex Kryuchkov"
