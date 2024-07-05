@@ -30,7 +30,7 @@ msgstr "Recorder"
 #: data/com.github.alexkdeveloper.recorder.appdata.xml.in:8
 #: data/com.github.alexkdeveloper.recorder.desktop.in:5
 msgid "Simple audio recorder"
-msgstr "Grabador de audio sencilla"
+msgstr "Simple audio recorder"
 
 #: data/com.github.alexkdeveloper.recorder.appdata.xml.in:14
 msgid "Alex Kryuchkov"
@@ -92,7 +92,7 @@ msgstr "Abrir la carpeta de grabaciones"
 
 #: src/MainWindow.vala:132
 msgid "About Recorder"
-msgstr "Acerca del Grabador"
+msgstr "Acerca de Recorder"
 
 #: src/MainWindow.vala:133
 msgid "Quit"
@@ -211,7 +211,7 @@ msgstr "El temporizador está en marcha"
 
 #: src/MainWindow.vala:545
 msgid "translator-credits"
-msgstr "créditos del traductor"
+msgstr "Créditos del traductor"
 
 #: src/MainWindow.vala:564
 msgid "_OK"
