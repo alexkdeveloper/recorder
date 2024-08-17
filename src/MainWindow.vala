@@ -541,7 +541,7 @@ private void on_stop_record_clicked(){
 	        var win = new Adw.AboutWindow () {
                 application_name = "Recorder",
                 application_icon = "com.github.alexkdeveloper.recorder",
-                version = "1.0.18",
+                version = "1.0.19",
                 copyright = "Copyright © 2022-2024 Alex Kryuchkov",
                 license_type = License.GPL_3_0,
                 developer_name = "Alex Kryuchkov",
